@@ -1,0 +1,20 @@
+{
+  "name": "preact-usedebuglog",
+  "version": "1.0.0",
+  "description": "Use Javascript console.log as hook",
+  "main": "build/index.js",
+  "author": "Anthony Tran Van",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d build"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.8",
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-transform-react-jsx": "^7.12.7",
+    "@babel/preset-env": "^7.12.7"
+  },
+  "dependencies": {
+    "preact": "^10.5.7"
+  }
+}
