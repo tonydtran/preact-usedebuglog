@@ -25,7 +25,7 @@ Then, import `useDebugLog` in your component:
 ```
 // App.js
 
-import { useDebugLog } from 'react-usedebuglog'
+import { useDebugLog } from 'preact-usedebuglog'
 
 function App() {
   const c = useDebugLog('App')
