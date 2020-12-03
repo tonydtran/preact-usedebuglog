@@ -50,8 +50,24 @@ const c = useDebugLog(<componentName>, <enable>)
 - `componentName`: String, required. Your current component name. Ex: 'MyComponent'.
 - `enable`: Boolean, optional. Enable logs within current component. By default, if `enable` has no value, it will take `dev` props value from `DebugLogProvider`, otherwise `enable` will locally override `dev` value.
 
+### `useDebugLog` methods:
+preact-usedebuglog provides those `console` Javascript methods:
+- log
+- table
+- info
+- error
+- warn
+- trace
+
+Examples
+```
+c.log('Hello, World')
+c.table({ a: 'Hello', b: 'World' })
+```
+Please refer to `console` documentation if needed https://developer.mozilla.org/en-US/docs/Web/API/Console
+
 ### Command
-Can by useful in production environment. Assuming you've disabled logs within the entire app by setting `dev` as `false` or you've locally disabled by doing `const c = useDebugLog('MyComponent', false)`, if you can manually enable logs in a mounted component directly from your web browser console:
+Can by useful in production environment. Assuming you've disabled logs within the entire app by setting `dev` as `false` or you've locally disabled by doing `const c = useDebugLog('MyComponent', false)`, you can manually enable logs in a mounted component directly from your web browser console:
 ```
 useDebugLog.<componentName>(<enable>)
 
