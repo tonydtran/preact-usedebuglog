@@ -2,7 +2,7 @@
 
 ## Get Started
 ```
-yarn add https://github.com/tonydtran/preact-usedebuglog.git
+yarn add preact-usedebuglog
 ```
 ## Usage
 First, import `DebugLogProvider` in your app root:
