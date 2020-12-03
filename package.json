@@ -1,10 +1,11 @@
 {
   "name": "preact-usedebuglog",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Use Javascript console.log as hook",
   "main": "build/index.js",
   "author": "Anthony Tran Van",
   "license": "MIT",
+  "url": "https://github.com/tonydtran/preact-usedebuglog",
   "scripts": {
     "build": "babel src -d build"
   },
