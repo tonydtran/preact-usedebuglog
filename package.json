@@ -1,6 +1,6 @@
 {
   "name": "preact-usedebuglog",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Use Javascript console.log as hook",
   "main": "dist/index.js",
   "author": "Anthony Tran Van",

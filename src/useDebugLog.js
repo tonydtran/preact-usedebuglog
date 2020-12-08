@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from 'preact/hooks'
+import { useState, useEffect, useContext, useCallback } from 'preact/hooks'
 import { DebugLogContext } from './Context'
 
 export const useDebugLog = (componentName, arg2, arg3) => {
