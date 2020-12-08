@@ -1,5 +1,7 @@
 # preact-usedebuglog
 
+[![react-usedebuglog.png](https://i.postimg.cc/VLpM10wN/react-usedebuglog.png)](https://postimg.cc/svP14XvF)
+
 ## Get Started
 ```
 yarn add preact-usedebuglog
@@ -45,10 +47,21 @@ function App() {
 
 ### `useDebugLog` arguments:
 ```
-const c = useDebugLog(<componentName>, <enable>)
+const c = useDebugLog(<componentName>, <colors>, <enable>)
 ```
 - `componentName`: String, required. Your current component name. Ex: 'MyComponent'.
+- `colors`: Object, optional. Customize label color and background color. By default, `{ color: 'inherit', backgroundColor: 'blue'}`.
 - `enable`: Boolean, optional. Enable logs within current component. By default, if `enable` has no value, it will take `dev` props value from `DebugLogProvider`, otherwise `enable` will locally override `dev` value.
+
+Examples
+```
+const c = useDebugLog('MyComponent')
+const c = useDebugLog('MyComponent', false)
+const c = useDebugLog('MyComponent', { color: 'white', backgroundColor: 'gray' })
+const c = useDebugLog('MyComponent', { color: '#32a852', backgroundColor: '#000000' }, true)
+const c = useDebugLog('MyComponent', { color: '#32a852' }) // backgroundColor will be 'blue' by default
+const c = useDebugLog('MyComponent', { backgroundColor: 'orange' }) // color will be 'inherit' by default
+```
 
 ### `useDebugLog` methods:
 preact-usedebuglog provides those `console` Javascript methods:
